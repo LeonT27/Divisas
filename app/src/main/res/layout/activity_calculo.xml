@@ -41,8 +41,9 @@
             android:text="@string/procesar"/>
 
     </LinearLayout>
-
+    <!--Resultados deben ser con adapter-->
     <LinearLayout
+
         android:id="@+id/resultados"
         android:orientation="horizontal"
         android:layout_width="match_parent"

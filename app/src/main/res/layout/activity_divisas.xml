@@ -4,18 +4,21 @@
     android:layout_height="match_parent">
 
     <Button
+        android:id="@+id/dop"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:text="@string/dop"/>
 
     <Button
+        android:id="@+id/usd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:text="@string/usd"/>
 
     <Button
+        android:id="@+id/eur"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"

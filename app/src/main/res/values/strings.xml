@@ -3,4 +3,5 @@
     <string name="usd">Dolar Estadounidense</string>
     <string name="eur">Euro</string>
     <string name="dop">Peso Dominicano</string>
+    <string name="procesar">Calcular</string>
 </resources>

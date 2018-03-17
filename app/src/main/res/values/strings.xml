@@ -7,4 +7,9 @@
     <string name="eur_value">55.2</string>
     <string name="dop_value">1</string>
     <string name="procesar">Calcular</string>
+    <string-array name="divisas">
+        <item>DOP</item>
+        <item>USD</item>
+        <item>EUR</item>
+    </string-array>
 </resources>

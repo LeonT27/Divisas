@@ -1,9 +1,11 @@
 package com.example.el_to.divisas;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -21,6 +23,8 @@ public class CalculoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculo);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         Intent divisasIntent = getIntent();
         divisa = divisasIntent.getStringExtra("Divisa");
 
@@ -34,8 +38,19 @@ public class CalculoActivity extends AppCompatActivity {
 
                 ListView listView = findViewById(R.id.list_view);
                 listView.setAdapter(divisasAdapter);
+
+                InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+                if (imm != null) {
+                    imm.hideSoftInputFromWindow(v.getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
+                }
             }
         });
+    }
+
+    @Override
+    public boolean onSupportNavigateUp(){
+        finish();
+        return true;
     }
 
     private String calcularDivisa(double divisa1, double divisa2, double valorIngresado)

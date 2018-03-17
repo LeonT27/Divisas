@@ -30,7 +30,7 @@ public class DivisasAdapter extends ArrayAdapter<Divisas>
         TextView textView = convertView.findViewById(R.id.valorDivisa);
 
         imageView.setImageResource(divisas.getImagen());
-        textView.setText(String.valueOf(divisas.getValor()));
+        textView.setText(divisas.getValor());
 
         return convertView;
     }

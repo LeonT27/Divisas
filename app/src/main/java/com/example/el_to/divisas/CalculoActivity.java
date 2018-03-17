@@ -8,6 +8,8 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
 
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 import java.util.ArrayList;
 
 public class CalculoActivity extends AppCompatActivity {
@@ -36,15 +38,17 @@ public class CalculoActivity extends AppCompatActivity {
         });
     }
 
-    private double calcularDivisa(double divisa1, double divisa2, double valorIngresado)
+    private String calcularDivisa(double divisa1, double divisa2, double valorIngresado)
     {
-        return (valorIngresado / divisa1)* divisa2;
+        NumberFormat formatter = new DecimalFormat("#0.00");
+        System.out.println(formatter.format(4.0));
+        return formatter.format((valorIngresado / divisa1)* divisa2);
     }
 
     private ArrayList<Divisas> TipoDivisa(String divisa)
     {
         EditText editText = findViewById(R.id.monto);
-        if(editText.getText().toString().isEmpty())
+        if(editText.getText().toString().isEmpty() || editText.getText().toString().equals("."))
         {
             editText.setText("0");
         }

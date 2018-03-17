@@ -6,9 +6,9 @@ import android.content.Intent;
 class Divisas {
 
     private int Imagen;
-    private double Valor;
+    private String Valor;
 
-    Divisas(int imagen, double valor)
+    Divisas(int imagen, String valor)
     {
         this.Imagen = imagen;
         this.Valor = valor;
@@ -19,7 +19,7 @@ class Divisas {
         return this.Imagen;
     }
 
-    double getValor()
+    String getValor()
     {
         return this.Valor;
     }

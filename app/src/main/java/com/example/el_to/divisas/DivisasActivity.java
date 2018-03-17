@@ -11,6 +11,7 @@ public class DivisasActivity extends AppCompatActivity implements View.OnClickLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_divisas);
 
+        
         findViewById(R.id.dop).setOnClickListener(this);
         findViewById(R.id.eur).setOnClickListener(this);
         findViewById(R.id.usd).setOnClickListener(this);

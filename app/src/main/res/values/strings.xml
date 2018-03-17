@@ -3,5 +3,8 @@
     <string name="usd">Dolar Estadounidense</string>
     <string name="eur">Euro</string>
     <string name="dop">Peso Dominicano</string>
+    <string name="usd_value">47.1</string>
+    <string name="eur_value">55.2</string>
+    <string name="dop_value">1</string>
     <string name="procesar">Calcular</string>
 </resources>
